@@ -69,7 +69,6 @@ namespace net_demo {
 
             Stream stream = resp.GetResponseStream();
 
-            //获取响应内容
             using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
             {
                 result = reader.ReadToEnd();
